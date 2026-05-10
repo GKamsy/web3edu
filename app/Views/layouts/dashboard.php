@@ -105,9 +105,6 @@
                         <li> <a href="/dashboard/checklist" data-link <?= active('/checklist', $currentPath) ?>> 📝 Checklist</a> </li>
                     <?php endif; ?>
                     <li> <a href="/dashboard/calendar" data-link <?= active('/calendar', $currentPath) ?>> 📅 Calendar</a> </li>
-                    <?php if ($role === 'admin'): ?>
-                        <li> <a href="/dashboard/binance" data-link <?= active('/binance', $currentPath) ?>> 📝 Binance</a> </li>
-                    <?php endif; ?>
                 </ul>
 
                 <!-- ================= ADMIN ================= -->
