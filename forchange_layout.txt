@@ -1,0 +1,95 @@
+/srv/http/school/
+├── app/
+│   ├── Controllers/
+│   │   ├── AnnouncementController.php
+│   │   ├── AuthController.php
+│   │   ├── CourseController.php
+│   │   ├── DashboardController.php
+│   │   ├── MessageController.php
+│   │   ├── NotificationController.php
+│   │   ├── PageController.php
+│   │   ├── PrincipalController.php
+│   │   ├── ProfileController.php
+│   │   ├── StudentController.php
+│   │   └── TeacherController.php
+│   ├── Core/
+│   │   ├── Controller.php
+│   │   ├── Csrf.php
+│   │   ├── Model.php
+│   │   └── Router.php
+│   ├── Models/
+│   │   ├── ******
+│   │   └── User.php
+│   ├── Services/  
+│   │   ├── AnnouncementService.php
+│   │   ├── AuthHelper.php
+│   │   ├── AuthService.php
+│   │   ├── AnnouncementService.php
+│   │   ├── MessageService.php
+│   │   ├── NotificationService.php
+│   │   ├── PrincipalService.php
+│   │   ├── ProfileService.php
+│   │   ├── Security.php
+│   │   ├── StudentService.php
+│   │   ├── TeacherService.php
+│   │   └── ViewService.php
+│   └── Views/
+│       ├── dashboard/
+│       │   ├── index.php 
+│       │   ├── tasks.php
+│       │   ├── checklist.php
+│       │   ├── calendar.php
+│       │   └── courses.php
+│       ├── emails/
+│       │   ├── confirm-email.php   ← For every applicant
+│       │   ├── master-login-code.php   ← For principals only
+│       │   └── login-code.php   ← For teachers, principals and admins
+│       ├── home/
+│       │   ├── application-done.php
+│       │   ├── apply.php
+│       │   ├── approve.php
+│       │   ├── confirm-email.php
+│       │   ├── index.php
+│       │   ├── login.php
+│       │   ├── login-code.php 
+│       │   ├── master-login-code.php 
+│       │   ├── reg-successful.php 
+│       │   └── successful.php 
+│       ├── layouts/
+│       │   ├── dashboard.php
+│       │   └── main.php
+│       ├── messages/
+│       │   ├── announcements.php
+│       │   ├── compose.php
+│       │   ├── create-announcement.php
+│       │   ├── create-notification.php
+│       │   ├── messages.php 
+│       │   └── notifications.php 
+│       ├── profile/
+│       │   └── index.php 
+│       └── shared/
+│           ├── not-allowed.php
+│           ├── not-found.php
+│           └── under-construction.php
+├── config/
+│   ├── config.php
+│   ├── create-database.php
+│   ├── create-tables.php
+│   ├── create-user.php
+│   └── ulter-tables.php
+├── public/              ← web root
+│   ├── css/
+│   │   ├── dashboard.css 
+│   │   └── style.css
+│   ├── images/
+│   │   └── uploads/ 
+│   ├── js/
+│   │   ├── dashboard.js
+│   │   └── main.js 
+│   ├── index.php        ← single entry point
+│   └── info.php         ← PHP information
+├── storage/
+│   └── logs/
+├── vendor/              ← Composer dependencies
+├── composer.json
+└── composer.lock
